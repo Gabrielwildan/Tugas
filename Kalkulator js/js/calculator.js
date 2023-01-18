@@ -1,6 +1,6 @@
-let btn = document.querySelectorAll(".btn-angka > button");
+let btn = document.querySelectorAll(".btn-angka");
 let tampil = document.querySelector("#tampil");
-let mat = document.querySelectorAll(".btn-mat > button");
+let mat = document.querySelectorAll(".btn-mat");
 let option = null;
 let x;
 let y;
@@ -24,24 +24,24 @@ for (let i = 0; i < btn.length; i++) {
     }
 }
 
-mat[0].onclick = function () {
+mat[3].onclick = function () {
     tampil.value = "0";
     option = null;
 }
 
-mat[1].onclick = function () {
+mat[0].onclick = function () {
     option = "plus";
     x = tampil.value;
     tampil.value = "0";
 }
 
-mat[2].onclick = function () {
+mat[1].onclick = function () {
     option = "minus";
     x = tampil.value;
     tampil.value = "0";
 }
 
-mat[3].onclick = function () {
+mat[2].onclick = function () {
     option = "multiply";
     x = tampil.value;
     tampil.value = "0";
